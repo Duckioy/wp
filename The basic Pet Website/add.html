@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assessment 1.3</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <div>
+            <a href="index.html">
+              <img id="icon" src="images/logo.png" alt="Home logo" />
+            </a>
+            <select
+              onchange="handleSelection(this.value)"
+              id="navbox"
+              name="option"
+            >
+              <option disabled selected>Select an Option...</option>
+              <option value="index.html">Home</option>
+              <option value="pets.html">Pets</option>
+              <option value="add.html">Add more</option>
+              <option value="gallery.html">Gallery</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <input type="text" id="searchbox" placeholder="Search" />
+          <div id="searching">
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              target="_blank"
+            >
+              <img
+                id="searching"
+                src="images/searchingtool.png"
+                alt="Searching sign"
+              />
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="mainbody-3">
+      <div id="fontbody5">
+        <strong>Add a pet</strong>
+      </div>
+
+      <div id="fontbody6">
+        <p>You can add a new pet here</p>
+      </div>
+      <form>
+        <label for="pname">Pet Name: <span class="required">*</span></label>
+        <input
+          type="text"
+          class="box-style"
+          name="petname"
+          placeholder="Provide the name of the pet"
+        />
+
+        <label for="type">Type: <span class="required">*</span></label>
+        <div>
+          <select id="opt-box" name="Choice">
+            <option value="" selected>--Choose an option--</option>
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+          </select>
+        </div>
+
+        <label for="description"
+          >Description: <span class="required">*</span></label
+        >
+        <div>
+          <textarea placeholder="Describe the pet briefly"></textarea>
+        </div>
+
+        <label for="select-img"
+          >Select an image: <span class="required">*</span></label
+        >
+        <div>
+          <input type="submit" id="choosefile" value="Choose file" />
+          <span class="notification">No file chosen</span>
+          <span class="required-image"><i>MAX IMAGE SIZE: 500PX</i></span>
+        </div>
+
+        <label for="img-caption"
+          >Image Caption: <span class="required">*</span></label
+        >
+
+        <div>
+          <input
+            type="text"
+            class="box-style"
+            name="img-caption"
+            placeholder="describe image in one word"
+          />
+        </div>
+
+        <label for="age">Age(months): <span class="required">*</span></label>
+        <div>
+          <input
+            type="text"
+            class="box-style"
+            name="img-caption"
+            placeholder="Age of a pet in months"
+          />
+        </div>
+
+        <label for="locations">Location: <span class="required">*</span></label>
+        <div>
+          <input
+            type="text"
+            class="box-style"
+            name="location"
+            placeholder="Location of the pet"
+          />
+        </div>
+
+        <div>
+          <button type="submit" id="submit-form" value="submit">
+            <span id="icon-submit"><img src="images/addtask.png" /> </span
+            >submit
+          </button>
+
+          <button type="submit" id="clear-form" value="clear">
+            <span id="icon-clear"><img src="images/close.png" /> </span>clear
+          </button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <b id="footertext"
+        >&copy; Copyright s4038230. All right reserved | Designed for Pets
+        Victoria</b
+      >
+    </footer>
+  </body>
+</html>

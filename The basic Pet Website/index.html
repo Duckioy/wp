@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assesment 1.1</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="index.html">
+            <img id="icon" src="images/logo.png" alt="Home logo" />
+          </a>
+          <select
+            onchange="handleSelection(this.value)"
+            id="navbox"
+            name="option"
+          >
+            <option disabled selected>Select an Option...</option>
+            <option value="index.html">Home</option>
+            <option value="pets.html">Pets</option>
+            <option value="add.html">Add more</option>
+            <option value="gallery.html">Gallery</option>
+          </select>
+        </div>
+
+        <div>
+          <input type="text" id="searchbox" placeholder="Search" />
+          <div id="searching">
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              target="_blank"
+            >
+              <img
+                id="searching"
+                src="images/searchingtool.png"
+                alt="Searching sign"
+              />
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="mainbody-1">
+      <img id="mainpicture-1" src="images/main.jpg" alt="Dog and cat" />
+
+      <div class="fontbody1">
+        <p>PETS VICTORIA</p>
+      </div>
+
+      <div class="fontbody2">
+        <p>WELCOME TO PET</p>
+        <p>ADOPTION</p>
+      </div>
+    </main>
+
+    <footer>
+      <b id="footertext"
+        >&copy; Copyright s4038230. All right reserved | Designed for Pets
+        Victoria</b
+      >
+    </footer>
+  </body>
+</html>

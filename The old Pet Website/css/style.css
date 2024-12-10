@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poetsen+One&family=Ysabeau+SC:wght@1..1000&display=swap");
+
+:root {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  width: 1200px;
+}
+
+header {
+  align-items: center;
+  justify-content: space-between;
+  background: #0c8080;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-right: 2.5%;
+  padding-left: 2.5%;
+  padding-bottom: 1%;
+  margin: auto;
+  width: 85%;
+}
+
+#icon {
+  width: 55px;
+  height: 55px;
+  float: left;
+}
+
+#searching {
+  width: 30px;
+  height: 30px;
+  margin-top: 5%;
+  float: right;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbox {
+  width: 155px;
+  height: 35px;
+  font-size: medium;
+  margin-left: 20px;
+}
+
+#searchbox {
+  width: 150px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.details-link a:link,
+a:visited,
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+/*index.php*/
+#mainbody-1 {
+  background-color: #fdfaec;
+  width: 85%;
+  overflow: hidden;
+  /* Clear floats */
+  text-align: center;
+  margin: auto;
+  padding: 2.5%;
+}
+
+#mainpicture-1 {
+  width: 450px;
+  /* Adjust size as needed */
+  height: 450px;
+  /* Adjust size as needed */
+  border-radius: 50%;
+  float: right;
+  overflow: hidden;
+  /* Ensures the image does not overflow its container */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow for glowing effect */
+}
+
+/*border for the picture*/
+#mainpicture-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.fontbody1 {
+  text-align: left;
+  font-family: "Permanent Marker";
+  font-size: 60px;
+  color: #e57f3d;
+  justify-content: space-between;
+}
+
+.fontbody2 {
+  line-height: 40%;
+  text-align: left;
+  font-family: "Poetsen One";
+  font-size: 50px;
+  color: #0c8080;
+  justify-content: space-between;
+}
+
+/*pets.php*/
+#mainbody-2 {
+  background-color: #fff;
+  width: 85%;
+  overflow: hidden;
+  /* Clear floats */
+  text-align: center;
+  margin: auto;
+  padding: 2.5%;
+}
+
+#mainpicture-2 {
+  margin-top: 2%;
+  margin-left: -3%;
+  width: 45%;
+  height: 45%;
+  float: left;
+  overflow: hidden;
+  /* Ensures the image does not overflow its container */
+}
+
+#fontbody3 {
+  text-align: center;
+  font-family: Arial;
+  font-size: 25px;
+  color: #264050;
+  margin-top: -1%;
+  margin-bottom: -20px;
+}
+
+#fontbody4 {
+  margin-top: 4%;
+  text-align: center;
+  font-family: "Ysabeau SC";
+  font-size: 15;
+  line-height: 1.5;
+  color: black;
+}
+
+table {
+  margin-top: 2%;
+  margin-right: -2.6%;
+  float: right;
+  border: 1px solid;
+  font-family: "Ysabeau SC";
+  width: 50%;
+  text-align: left;
+}
+
+th {
+  color: #008080;
+  background-color: #fdfaec;
+}
+
+/*add.php*/
+#mainbody-3 {
+  background-color: #fff;
+  width: 85%;
+  overflow: hidden;
+  /* Clear floats */
+  text-align: center;
+  margin: auto;
+  padding: 2.5%;
+}
+
+#fontbody5 {
+  text-align: center;
+  font-family: Arial;
+  font-size: 25px;
+  color: #264050;
+  margin-top: -1%;
+  margin-bottom: -20px;
+}
+
+#fontbody6 {
+  margin-top: 3%;
+  text-align: center;
+  font-family: "Ysabeau SC";
+  font-size: 18px;
+}
+
+label {
+  font-size: large;
+  font-family: "Ysabeau SC";
+  font-weight: 500;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  float: left;
+  clear: both;
+}
+
+.required {
+  font-weight: bold;
+  color: red;
+}
+
+.box-style {
+  width: 100%;
+  height: 50px;
+  padding-left: 1.5%;
+}
+
+::placeholder {
+  font-size: 18px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#opt-box {
+  width: 100%;
+  height: 50px;
+  padding-left: 1.5%;
+  font-size: 18px;
+  float: left;
+}
+
+textarea {
+  width: 98%;
+  height: 40px;
+  margin-top: 1%;
+  padding-left: 1.5%;
+  border-radius: 4px;
+  font-size: large;
+}
+
+textarea ::placeholder {
+  color: #888;
+  font-weight: bold;
+  font-size: large;
+  font-family: "Courier New", Courier, monospace;
+}
+
+input[type="file"] {
+  margin-left: 1%;
+  margin-top: 1%;
+  float: left;
+}
+
+button[type="submit"] {
+  background-color: #0c8080;
+
+  color: white;
+  border-style: none;
+  border-radius: 25px;
+  height: 45px;
+  width: 15%;
+}
+
+button[type="reset"] {
+  background-color: transparent;
+  margin-left: 3.5%;
+  color: #0c8080;
+  border-style: none;
+  border-radius: 25px;
+  height: 45px;
+  width: 15%;
+  border-left-color: #008080;
+  border-top-color: #008080;
+  border-bottom-color: #36454f;
+  border-right-color: #36454f;
+  border-style: solid;
+}
+
+#icon-submit {
+  margin-right: 5%;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+  display: inline-flex;
+  text-align: center;
+  clear: both;
+}
+
+#icon-clear {
+  margin-right: 2%;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+  display: inline-flex;
+  text-align: center;
+  clear: both;
+}
+
+.notification {
+  margin-left: 1%;
+  margin-top: 1%;
+  float: left;
+  font-family: sans-serif;
+}
+
+.required-image {
+  display: inline-flex;
+  color: red;
+  font-family: "Ysabeau SC";
+  font-size: small;
+  font-weight: bold;
+  margin-top: 1%;
+  margin-left: -30%;
+}
+
+/*gallery.php*/
+#mainbody-4 {
+  background-color: #fff;
+  width: 85%;
+  overflow: hidden;
+  /* Clear floats */
+  text-align: center;
+  margin: auto;
+  padding: 2.5%;
+}
+
+#fontbody7 {
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  color: #264050;
+  margin-top: -3%;
+  margin-bottom: -20px;
+  font-weight: bold;
+}
+
+#fontbody8 {
+  margin-top: 3%;
+  text-align: center;
+  font-family: "Ysabeau SC";
+  font-size: 15px;
+  line-height: 1.5;
+  color: gray;
+}
+
+.imgbox {
+  width: 300px;
+  /* Adjust size as needed */
+  height: 250px;
+  /* Adjust size as needed */
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #ccd2d9;
+  float: inline-start;
+  margin: 1%;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-bottom: auto;
+  position: relative;
+}
+
+/*Make img fit into the border and change its size*/
+.imgbox img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.imgbox:hover .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75%;
+  background-color: rgba(255, 255, 255, 0.6);
+  /* Adjust opacity as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clear: both;
+}
+
+.imgbox:hover .overlay p {
+  font-family: "Ysabeau SC";
+  text-decoration: underline;
+  font-size: 18px;
+  text-align: center;
+  clear: both;
+}
+
+.imgbox:hover .overlay img {
+  /* Styles for overlay image */
+  width: 50px;
+  /* Adjust size */
+  height: auto;
+  align-self: center;
+  clear: both;
+}
+
+/*details.php*/
+#mainbody-5 {
+  background-color: #fff;
+  width: 85%;
+  overflow: hidden;
+  /* Clear floats */
+  text-align: center;
+  margin: auto;
+  padding: 2.5%;
+}
+
+#mainpicture-3 {
+  align-items: center;
+  width: 40%;
+  height: 40%;
+  overflow: hidden;
+}
+
+.icon-details {
+  display: flex;
+  justify-content:space-around;
+  margin-left: 4.5%;
+  margin-top: 2%;
+}
+
+.icon-details img {
+  width: 45px;
+  height: 45px;
+}
+
+.icon-details p {
+  font-family: "Ysabeau SC";
+  margin-top: 10%;
+}
+
+.fontbody-5 p, h2{
+  font-family: "Ysabeau SC";
+}
+
+/*Website's footer*/
+footer {
+  text-align: center;
+  background: #e57f3d;
+  margin: auto;
+  border-radius: 10px;
+  padding: 2.5%;
+  width: 85%;
+}
+
+#footertext {
+  margin: auto;
+  font-family: "Ysabeau SC";
+  font-size: medium;
+  color: #264050;
+}
